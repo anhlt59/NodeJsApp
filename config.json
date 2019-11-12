@@ -1,0 +1,31 @@
+{
+    "port": 3000,
+    "timeout": 300000,
+    "database": {
+        "connection": "mongodb://localhost:27017/test",
+        "options": {
+            "auto_reconnect": true,
+            "useNewUrlParser": true,
+            "useCreateIndex": true
+        }
+    },
+    "logger": {
+        "transportFile": {
+            "maxFiles": 5,
+            "maxsize": 5120000,
+            "level": "warning",
+            "filename": "./logs/log-api.log"
+        },
+        "transportConsole": {
+            "level": "debug"
+        }
+    },
+    "session": {
+        "secret": "anhlt59",
+        "resave": true,
+        "saveUninitialized": false,
+        "cookie": {
+            "maxAge": 6000000000
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Manager</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>Manager</h1>
+  <p>Search</p>
+  Search account: <input type="text" value="" onchange="findAccount(this.value)"><br>
+  <br>
+  <button onclick="addAccount()">Add</button>
+  <button onclick="deleteAccount()">Delete</button>
+  <input type="text" id="getAccount" value=""><br>
+  <p id="account"></p>
+  <p id="find"></p>
+  <button onclick="logout()">Logout</button>
+  <script src="./javascripts/search.js"></script>
+</body>
+
+</html>
